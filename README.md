@@ -2,6 +2,12 @@
 <br>
 
 ##For Installation & Test
+```
+git clone https://github.com/burakerenel/vyral
+cd vyral && composer update
+```
+
+
 .env.example file is changed to .env and mysql settings are made
 
 ```
