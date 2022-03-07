@@ -1,5 +1,5 @@
-
 # Twitter Feeder Application
+<br>
 
 ##For Installation & Test
 ```
@@ -9,11 +9,8 @@ php artisan test
 
 ## API Usage
 
-### Register
 
-```http
-  POST /api/v1/register
-```
+### POST /api/v1/register (Register)
 
 | Field | Type     | Description                |
 | :-------- | :------- | :------------------------- |
@@ -33,11 +30,7 @@ php artisan test
 ```
 <br /><br />
 
-### Login
-
-```http
-  POST /api/v1/login
-```
+### POST /api/v1/login (Login)
 
 | Field | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
@@ -52,11 +45,9 @@ php artisan test
 ```
 <br /><br />
 
-### Verify Check (Authorization Bearer)
-
-```http
-  POST api/v1/check-verify
-```
+### POST api/v1/check-verify (Verify Check)
+Requests must be made using the bearer token.
+<br>
 ##### Successful Example Response
 ```
 {
@@ -68,10 +59,11 @@ php artisan test
 <br /><br />
 
 
-### Verify Send Code (Authorization Bearer)
-```http
-  POST api/v1/verify-send-code
-```
+### POST api/v1/verify-send-code (Verify Send Code)
+
+Requests must be made using the bearer token.
+<br>
+
 | Field | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `type`      | `string` | **Required** |
@@ -86,10 +78,10 @@ php artisan test
 
 <br /><br />
 
-### Verify Code (Authorization Bearer)
-```http
-  POST api/v1/verify-code
-```
+### POST api/v1/verify-code (Verify Code)
+
+Requests must be made using the bearer token.
+
 | Field | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `type`      | `string` | **Required** |
@@ -105,10 +97,10 @@ php artisan test
 <br /><br />
 
 
-### Get Tweets by Username (Authorization Bearer)
-```http
-  GET api/v1/get-tweets/{twitter_username}
-```
+### GET api/v1/get-tweets/{twitter_username} (Get Tweets by Username)
+
+Requests must be made using the bearer token.
+
 
 ##### Successful Example Response
 ```
@@ -318,11 +310,10 @@ php artisan test
 <br /><br />
 
 
-### Edit Tweet (Authorization Bearer)
-status should be declined or published
-```http
-  POST api/v1/edit-tweet/{id}
-```
+### POST api/v1/edit-tweet/{id} (Edit Tweet)
+Requests must be made using the bearer token.
+Status should be declined or published.
+
 | Field | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `tweet_data`      | `json` | **Required** |
