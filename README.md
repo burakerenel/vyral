@@ -107,7 +107,7 @@ php artisan test
 
 ### Get Tweets by Username (Authorization Bearer)
 ```http
-  GET api/v1/get-tweets/{twitter_usernam}
+  GET api/v1/get-tweets/{twitter_username}
 ```
 
 ##### Successful Example Response
