@@ -2,7 +2,10 @@
 <br>
 
 ##For Installation & Test
+.env.example file is changed to .env and mysql settings are made
+
 ```
+php artisan key:generate
 php artisan migrate
 php artisan test
 ```
